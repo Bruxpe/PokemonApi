@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import styles from "./Delete.module.css"
 import Footer from "../Footer/Footer"
-import { getAllPokemos, getAllTypes } from "../../Redux/actions";
+import { getAllPokemos } from "../../Redux/actions";
 import { deletePokeBd } from "../../Redux/actions";
 
 const Delete =()=>{
@@ -21,8 +21,8 @@ const Delete =()=>{
     },[]);
 
     const handleDelete = (e)=>{
-        if(event.target.value !== "no one"){
-            const selectedId = event.target.value;
+        if(e.target.value !== "no one"){
+            const selectedId = e.target.value;
             setSelectedPokeBd(bdpoke.find(a => a.id === selectedId))
         }else{
             return

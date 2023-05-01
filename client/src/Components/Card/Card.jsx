@@ -12,10 +12,10 @@ const Card = ({attack, defense, hp, id,img,name, speed,types})=>{
            <h2> {name}</h2>
            <img  src={img} alt="" />
            <Link  to={`/pokedetail/${name}`}>
-           <h2>Hp: {hp}</h2>
-           <h2>Attack: {attack}</h2>
-           <h2>Defense: {defense}</h2>
-           <h2 >Speed: {speed}</h2>
+           <h2>Hp: {hp}❤</h2>
+           <h2>Attack: {attack}🔪</h2>
+           <h2>Defense: {defense}🛡</h2>
+           <h2 >Speed: {speed}🏃‍♂️</h2>
            {/* <h2 >Typo: {types.join(" --- ")}</h2> */}
            </Link>
 

@@ -187,7 +187,7 @@ const Create =()=>{
                         </label>
                         
                         <label className={styles.labe} htmlFor="">Image Link:<input className={styles.inputs} id="Link" onChange={handleLinkImgChange} placeholder="Pokemon Speed" type="text" /></label>
-                        <img className={styles.im} src={ document.getElementById("Link").value} alt="" />
+                        <img className={styles.im} src={ selectedImg} alt="" />
                         <a className={styles.messageerror}>{errorimag}</a>
                         <br />
                         <button className={styles.butt} id="enviar" type="submit" onClick={handleInputPostSumit} >Submit</button>

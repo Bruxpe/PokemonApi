@@ -31,11 +31,12 @@ const CardDetail = ()=>{
                 </div>
                 <div className={styles.text}>
                     {/* <div>Name: {pokemon.name}</div> */}
-                    <div className={styles.tex}>HP: {pokemon.hp}</div>
-                    <div className={styles.tex}>Attack: {pokemon.attack}</div>
-                    <div className={styles.tex}>Defense: {pokemon.defense}</div>
-                    <div className={styles.tex}>Speed: {pokemon.speed}</div>
+                    <div className={styles.tex}>HP: {pokemon.hp}❤</div>
+                    <div className={styles.tex}>Attack: {pokemon.attack}🔪</div>
+                    <div className={styles.tex}>Defense: {pokemon.defense}🛡</div>
+                    <div className={styles.tex}>Speed: {pokemon.speed}🏃‍♂️</div>
                     <div className={styles.tex}>Types: {pokemon.types.join("---")}</div>
+
                 </div>
             </div>
             <Footer/>
